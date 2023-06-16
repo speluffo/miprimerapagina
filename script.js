@@ -1,32 +1,33 @@
-function showAlert(){
-    alert("Hola , Esta es una alerta de sde javaScript")
+function showAlert() {
+    alert("Hola Este es una alerta de JavaScript")
 }
 
-const form =document.getElementById("myForm")
+const form = document.getElementById("myForm")
 
 function validateEmail(email) {
-    const regex =   /^[^\s@]+@[^\s@]+\[^\s@].{2,7}$/
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,7}$/
     return regex.test(email)
 }
-function validateform() {
-    const Inpinputut = document.getElementById("email")
-    const inputValue = input.Value
 
-    if (!validateEmail(inputvalue)) {
-        alert(" por favor")
-    } alse{
-        alert(" por favor")
+function valideForm() {
+    const input = document.getElementById("email")
+    const inputValue = input.ariaValueMax
+
+    if (velidateEmail(inputValue)) {
+        alert("Por favor ingrese uncorreo valido")
+    }   else {
+        alert("Correo Electronico Enviado")
     }
 }
 
-form.addEventListener("sumit", function(lala){
+form.addEventListener("submit", function(lala) {
     lala.preventDefault()
-    validateform();
+    validateForm();
 })
-document.querySelector(GamepadButton.button-menu-toggle)
-addEventListener("")
 
- document.querySelector("button-menu-toggle")
-     .addEventListener("click", function() {
-            document.querySelector(".nav-links").
-                       classList.toggle("nav-links-responsive")})
+document.querySelector("button.button-menu-toggle")
+    .addEventListener("click", function() {
+    document.querySelector(".nav-links").classList.toggle("nav-links-responsive")
+}
+)
+

@@ -1,43 +1,41 @@
-.body {
+.body, ul {
   margin: 0;
-  /* font-family: monospace; */
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0;
 }
-.container {
+.container{
   max-width: 800px;
   margin: auto;
   padding: 20px;
 }
 
-.row {
+.row{
   display: flex;
   flex-wrap: wrap;
   margin: 10px;
 }
-.column{
+
+.colum {
   flex: 1;
   padding: 10px;
 }
 
-
-.greeting{
-  text-align: center;
-}
-
-
-
-
-.container-nav {
+.container-nav{
   display: flex;
   padding: 10px;
   height: 50px;
-  background-color: rgb(196, 101, 17);
+  background-color: rgb(23, 160, 21);
 }
-.navbar {
+
+.navbar{
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-.brand {
+
+.brand{
   display: flex;
   align-items: center;
 }
@@ -45,56 +43,46 @@
 li>a {
   padding: 8px 24px;
 }
-a {
-  color: white;
-  text-decoration:none;
+
+li {
+  list-style-type: none;
 }
 
-.nav-links {
+a {
+  color: rgb(194, 15, 15);
+  text-decoration: none;
+}
+
+.nav-links{
   display: flex;
-  /* align-items: center;  */
+  align-items: center;
+}
+
+.button-menu-toggle{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .colum{
+    flex: 100%;
   }
+
+  .nav-links{
+    display: none;
+  }
+
   .button-menu-toggle{
-    display:none;
-  }
-
-  @media (max-width: 768px) {
-    .column {
-      flex: 100%;
-    }
-
-    .nav-links {
-      display: none;
-      /* align-items: center;  */
-      }
-
-    .button-menu-toggle{
-      display:block;
-      background-color: white;
-      border:none;
-    }
-  }
-
- 
-
-
-/* .nav-links {
-    display: flex;
-  } */
-
-
-  /* .button-menu-toggle {
     display: block;
-    background-color: white;
-    border:none;
+    background-color: rgb(209, 154, 154);
+    border: none;
     border-radius: 50px;
     padding: 0 24px;
     font-family: monospace;
     font-weight: bold;
     font-size: 20px;
-  } */
- 
-  /* .nav-links.nav-links-responsive {
+  }
+
+  .nav-links.nav-links-responsive {
     position: absolute;
     display: flex;
     background-color: rgba(20,20,20,0.95);
@@ -105,6 +93,7 @@ a {
     flex-direction: column;
     padding-top: 200px;
     align-items: center;
-    gap:70px;
+    gap: 70px;
     font-size: 40px;
-  } */
+  }
+}
